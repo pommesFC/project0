@@ -5,30 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <link rel="stylesheet" href="home.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
     <div id="head">
             <a href="https://about.google/?fg=1&utm_source">About</a>
             <a href="">Store</a>
             <a id="images" class="right" href="images.html">Images</a>
-            <a id="gmail"class="right" href="https://gmail.com">Gmail</a>
+            <a id="gmail"class="right" href="advanced.html">Advanced Search</a>
     </div>
     <div id="logo">
         <img src="https://www.google.com/logos/doodles/2023/2023-womens-world-cup-aug-01-6753651837110064-law.gif" alt="Womes World cup">
 
     </div>
     <div id="searchsection">
-        <form action="https://www.google.com/search">
+        <form action="https://www.google.com/search" target="_blank">
             <div>
-                <input id="bar" type="text" name="q">
+                <input id="bar" class="search-input" type="text" name="q"/>
+                <i class="fas fa-search search-icon"></i>
+                
             </div>
-            <div id="button">
-                <input type="submit" value="Google Search">
+
+            <div class="buttons">
+                <input class="button" type="submit" value="Google Search " name="btnK"/>
+            </div>
+            <div id="lucky-button" class="buttons">
+                <input  id="lucky" class="button" type="submit" name="btnI" value="I'm Feeling Lucky"/>
             </div>
         </form>
     </div>
     <div id="buttom">
-        <p>Germany</p>
         <div id="links">
             <a href="">Advertising</a>
             <a href="">Business</a>
